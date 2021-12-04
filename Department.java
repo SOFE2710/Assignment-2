@@ -27,15 +27,17 @@ public class Department {
     // printing all the courses offered by the dept. using Course's toString() method
     public void printCoursesOffered() {
         for (Course course : courseList) {
-            course.toString();
+            System.out.println(course.toString());
         }
     }
     // printing all the students in the dept. using Student's toString() method
     public void printStudentsByName() {
-        for (Student student : registerList) {
-            student.toString();
+        for (Student student: registerList){
+            System.out.println(student.toString());
         }
     }
+
+
     // checking if the given student is registered using Vector.contains() method
     public boolean isStudentRegistered(Student student) {
         return registerList.contains(student);
